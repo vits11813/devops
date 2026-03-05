@@ -1,0 +1,7 @@
+# .pipeline/config.yml
+steps:
+  cloudFoundryDeploy:
+    cfApiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com' # Apne subaccount se check karein
+    cfOrg: 'a12e7f16trial'  # Apna Org name likhein
+    cfSpace: 'dev'          # Apna Space name likhein
+    cfCredentialsId: 'cf'   # Jo credential aapne abhi banaya tha
