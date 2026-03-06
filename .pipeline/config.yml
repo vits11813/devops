@@ -7,4 +7,4 @@ steps:
     cfCredentialsId: 'cf' # This is the Credential ID from your SAP CI/CD Service
   tmsUpload:
     tmsCredentialsId: 'tms-key' # Ensure this matches your TMS Credential name in CI/CD
-    nodeName: 'dev' # Replace with the exact name of your Node in TMS Landscape
+    nodeName: 'dev1' # Replace with the exact name of your Node in TMS Landscape
