@@ -2,18 +2,16 @@
 steps:
   mavenStaticCodeChecks: false
   npmExecuteLint: false
+  fortifyExecuteScan: false
+  sonarExecuteScan: false
   cloudFoundryDeploy:
     apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
     cfOrg: 'depdev1'
     cfSpace: 'dev1'
     cfCredentialsId: 'cf'
-  tmsUpload:
-    tmsCredentialsId: 'tms-key'
-    nodeName: 'dev1'
 
 stages:
   Release:
     tmsUpload: true
-    
-    
-
+    tmsCredentialsId: 'tms-key'
+    nodeName: 'dev1'
