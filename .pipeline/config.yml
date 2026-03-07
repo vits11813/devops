@@ -8,4 +8,4 @@ stages:
         cfCredentialsId: 'cf'
         tmsUpload: true
         tmsCredentialsId: 'tms-key'
-        nodeName: 'dev1'
+        nodeName: 'qa'
