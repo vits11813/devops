@@ -9,7 +9,7 @@ cfApiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
 cfOrg: "dpeqa1"
 cfSpace: "dev1"
 cfAppName: "app"
-cfCredentialsId: "deploy-to-cf"
+cfCredentialsId: "cf"
 tmsUpload: true
 
 steps:
