@@ -1,10 +1,13 @@
-
 steps:
   cloudFoundryDeploy:
     apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
     cfOrg: 'dpeqa1'
     cfSpace: 'dev1'
-    cfCredentialsId: 'cf' # This is the Credential ID from your SAP CI/CD Service
+    cfCredentialsId: 'cf'
   tmsUpload:
-    tmsCredentialsId: 'tms-key' # Ensure this matches your TMS Credential name in CI/CD
-    nodeName: 'dev1' # Replace with the exact name of your Node in TMS Landscape
+    tmsCredentialsId: 'tms-key'
+    nodeName: 'dev1'
+
+stages:
+  Release:
+    tmsUpload: true
