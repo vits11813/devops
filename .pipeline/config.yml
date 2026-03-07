@@ -6,7 +6,7 @@ stages:
     nodeName: 'dev1'
     cloudFoundryDeploy: true
 cfApiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
-cfOrg: "dpedev1"
+cfOrg: "dpeqa1"
 cfSpace: "dev1"
 cfAppName: "app"
 cfCredentialsId: "deploy-to-cf"
@@ -23,5 +23,5 @@ steps:
     mtaDeployParameters: "-f --version-rule ALL"
 
   tmsUpload:
-    nodeName: "dev1"
+    nodeName: "qa1"
     credentialsId: "tms-sk"
