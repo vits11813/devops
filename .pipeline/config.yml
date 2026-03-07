@@ -3,7 +3,7 @@ stages:
   Release:
     tmsUpload: true
     tmsCredentialsId: 'tms-key'
-    nodeName: 'dev1'
+    nodeName: 'qa1'
     cloudFoundryDeploy: true
 cfApiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
 cfOrg: "dpeqa1"
