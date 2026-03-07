@@ -1,8 +1,27 @@
 # .pipeline/config.yml
-# .pipeline/config.yml
+stages:
+  Release:
+    tmsUpload: true
+    tmsCredentialsId: 'tms-key'
+    nodeName: 'dev1'
+    cloudFoundryDeploy: true
+cfApiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
+cfOrg: "dpeqa1"
+cfSpace: "dev1"
+cfAppName: "app"
+cfCredentialsId: "deploy-to-cf"
+tmsUpload: true
+
 steps:
+  artifactPrepareVersion:
+    versioningType: "cloud_noTag"
+
+  npmExecuteLint:
+    failOnError: true
+
   cloudFoundryDeploy:
-    cfApiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com' # Apne subaccount se check karein
-    cfOrg: 'dpeqa1'  # Apna Org name likhein
-    cfSpace: 'dev1'          # Apna Space name likhein
-    cfCredentialsId: 'cf'   # 
+    mtaDeployParameters: "-f --version-rule ALL"
+
+  tmsUpload:
+    nodeName: "qa1"
+    credentialsId: "tms-sk"
