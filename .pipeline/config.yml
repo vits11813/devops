@@ -1,7 +1,7 @@
 # .pipeline/config.yml
 steps:
- # mavenStaticCodeChecks: false
-  #npmExecuteLint: false
+  mavenStaticCodeChecks: false
+  npmExecuteLint: false
   fortifyExecuteScan: false
   sonarExecuteScan: false
   cloudFoundryDeploy:
