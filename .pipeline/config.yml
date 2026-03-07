@@ -7,7 +7,7 @@ steps:
     cfCredentialsId: 'cf'
   tmsUpload:
     tmsCredentialsId: 'tms-key'
-    nodeName: 'qa'
+    nodeName: 'dev1'
 
 stages:
   Release:
