@@ -1,13 +1,11 @@
-steps:
-  cloudFoundryDeploy:
-    apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
-    cfOrg: 'dpeqa1'
-    cfSpace: 'dev1'
-    cfCredentialsId: 'cf'
-  tmsUpload:
-    tmsCredentialsId: 'tms-key'
-    nodeName: 'dev1'
-
 stages:
   Release:
-    tmsUpload: true
+    steps:
+      cloudFoundryDeploy:
+        apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
+        cfOrg: 'dpeqa1'
+        cfSpace: 'dev1'
+        cfCredentialsId: 'cf'
+        tmsUpload: true
+        tmsCredentialsId: 'tms-key'
+        nodeName: 'dev1'
