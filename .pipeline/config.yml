@@ -1,7 +1,3 @@
-
-
-# .pipeline/config.yml
-
 steps:
   cloudFoundryDeploy:
     apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
