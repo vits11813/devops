@@ -10,8 +10,8 @@ steps:
     cfSpace: 'dev1'
     cfAppName: 'app'
     cfCredentialsId: 'cf'
-    mtaDeployParameters: "-f --version-rule ALL"
-  
+    mtaDeployParameters: '-f --version-rule ALL'
+
   tmsUpload:
     tmsCredentialsId: 'tms-sk'
     nodeName: 'qa1'
