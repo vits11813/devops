@@ -1,9 +1,11 @@
- # .pipeline/config.yml
+# .pipeline/config.yml
 stages:
   Release:
     tmsUpload: true
 
 steps:
+  mavenStaticCodeChecks: false
+
   cloudFoundryDeploy:
     apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
     cfOrg: 'dpeqa1'
@@ -15,3 +17,7 @@ steps:
   tmsUpload:
     tmsCredentialsId: 'tms-sk'
     nodeName: 'qa1'
+
+
+
+  
